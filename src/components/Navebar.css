@@ -5,16 +5,14 @@
      padding: 20px 40px; 
     position: absolute;
     top: 0;
-    z-index: 99;
+    z-index: 1;
     width: 100%;
-    
-    
   }
   
-  .logo{
+  .logo a{
     font-size: 24px;
     font-weight: bold;
-    color: #222;
+    color: white;
   }
   
   .links {
@@ -35,9 +33,28 @@
   .links li a.active {
     border-bottom: 2px solid #222;
   }
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
     .links {
       display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 40px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      border-radius: 8px;
     }
-  } 
-   
+  
+    .links.show {
+      display: flex;
+    }
+  
+    .links li {
+      margin: 10px 0;
+    }
+  }

@@ -25,14 +25,12 @@ const products = [
     name: 'Wooden Table',
     price: 299,
   },
-  // Add more products as needed
 ];
 
 function ProductList() {
   return (
     <section className="product-section">
       <h2>Lateast Selection</h2>
-      {/* <p>Check out our new collection of<br/> modren furniture for you home & office</p> */}
       <div className="product-grid">
         {products.map((item) => (
           <ProductCard

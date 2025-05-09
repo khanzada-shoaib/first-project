@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src="" alt='logo'/>
+        <a>FRN</a>
       </div>
       <ul className="links">
         <li><a href="#about">About Us</a></li>

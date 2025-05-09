@@ -11,12 +11,12 @@ function Hero() {
       backgroundImage: `url(${img1})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '100vh',
+      height: '150vh',
     }}
   >
   <div class="hero-overlay">
     <div class="container">
-      <h1>Make Your Interior More<br/> Minimalistic & Modern</h1>
+      <h1 className='hiding'>Make Your Interior More<br/> Minimalistic & Modern</h1>
       <a href="#" class="btn-primary">Shop Now</a>
     </div>
   </div>
@@ -27,3 +27,4 @@ function Hero() {
 }
 
 export default Hero;
+
